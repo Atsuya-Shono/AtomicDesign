@@ -8,17 +8,6 @@ import "./styles.css";
 // import { DefaultLayout } from "./components/templates/DefaltLayout";
 import { Router } from "./router/Router";
 
-const user = {
-  name: "しょうの",
-  image: "https://source.unsplash.com/NE0XGVKTmcA",
-  email: "atsuya.shono@gmail.com",
-  phone: "090-6655-9841",
-  company: {
-    name: "shono株式会社"
-  },
-  website: "http://.com"
-};
-
 export default function App() {
   return (
     <Router />
