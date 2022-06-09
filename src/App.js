@@ -7,10 +7,16 @@ import "./styles.css";
 // import { BrowserRouter } from "react-router-dom";
 // import { DefaultLayout } from "./components/templates/DefaltLayout";
 import { Router } from "./router/Router";
+import { UserProvider } from "./providers/UserProvider";
+import { RecoilRoot } from "recoil";
 
 export default function App() {
   return (
-    <Router />
+    <RecoilRoot>
+      <UserProvider>
+        <Router />
+      </UserProvider>
+    </RecoilRoot>
     // <BrowserRouter>
     //   <DefaultLayout>
     //     <br />
